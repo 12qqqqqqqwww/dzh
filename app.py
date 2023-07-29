@@ -10,7 +10,7 @@ from flask_cors import CORS
 from flask import Flask, jsonify, request, json,render_template
 app = Flask(__name__)
 CORS(app)
-
+#添加了dzh
 startdate="20230201"
 @app.route('/getuserbyid/<string:uid>',methods=['GET', 'POST'])
 def getUser(uid):
